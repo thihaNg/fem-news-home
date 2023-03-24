@@ -1,0 +1,24 @@
+.popular-news-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: "InterBold";
+  color: white;
+}
+
+h3:hover {
+  cursor: pointer;
+  color: #F9A825;
+}
+
+.popular-news-item-container > p {
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .popular-news-item-container {
+    grid-row: 1 / 2;
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  font-family: 'InterRegular';
+  font-size: 16px;
+  color: rgb(55, 69, 95);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 48px;
+  padding: 16px;
+}
+
+.popular-news-wrapper {
+  background-color: #020913;
+  padding: 16px;
+}
+
+.popular-news-wrapper > h1 {
+  color: #F9A825;
+  padding: 16px 0px;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgb(55, 69, 95);
+  width: 100%;
+  margin: 16px 0px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-row-gap: 32px;
+    grid-column-gap: 0px;
+    padding: 16px;
+  }
+  
+}

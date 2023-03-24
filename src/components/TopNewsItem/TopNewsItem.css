@@ -1,0 +1,31 @@
+.top-news-container {
+  display: flex;
+}
+
+.top-news-container > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+}
+
+.top-news-container > div > h1 {
+  padding: 0px;
+  color: #d3d3d3;
+  margin-top: -6px;
+}
+
+.top-news-container > div > h4 {
+  color: #020913;
+  padding: 8px 0px;
+  font-family: 'InterBold';
+}
+
+.top-news-container > div > h4:hover {
+  color: #E64A19;
+}
+
+@media(max-width: 800px) {
+  .top-news-container {
+    grid-column: 1 / 2;
+  }
+}
